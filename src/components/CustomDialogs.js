@@ -185,7 +185,7 @@ export default function CustomizedDialogs({
     setOpen(false);
   };
 
-  if (!staffDetails.name) {
+  if (!staffDetails.name && open && staffDetails.type === "Edit") {
     return <div>Loading....</div>;
   }
 
